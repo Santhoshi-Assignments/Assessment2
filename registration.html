@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="registration.js"></script>
+
+    <title>Registration</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration</h2>
+
+        <div class="form-container">
+            <form id="form">
+
+                <div class="input-name">
+                    <i class="fa fa-user lock"></i>
+                    <input type="text" placeholder="Username" id="userName" class="text-name" required>
+                    
+                </div>
+
+                <div class="input-name">
+                    <i class="fa fa-user lock"></i>
+                    <input type="text" placeholder="First Name" id="firstName" class="name" required> 
+                  
+                    <span>
+                        <i class="fa fa-user lock"></i>
+                        <input type="text" placeholder="Last Name" id="lastName" class="name" required>
+                   
+                    </span>
+                </div>
+
+                <div class="input-name">
+                    <i class="fa fa-envelope email"></i>
+                    <input type="email" placeholder="Email" id="email" class="text-name" required > 
+         
+                </div>
+
+                <div class="input-name">
+                    <i class="fa fa-lock lock"></i>
+                    <input type="password" placeholder="Password" id="password" class="text-name" required >
+                   
+                    
+                </div>
+
+                <div class="input-name">
+                    <i class="fa fa-lock lock"></i>
+                    <input type="password" placeholder="Confirm Password" id="confirmPassword" class="text-name" required>
+                    
+                </div>
+
+                <div class="input-name">   
+                    
+                    <i class="fa fa-calendar lock"></i>
+                    <input type="date" class="text-name" id="dob" required>
+                    
+                </div>
+
+                <div class="input-name">   
+                    <input type="radio" value="Male" name="gender" class="radio-button">
+                    <label>Male</label> 
+                    <input type="radio" value="Female" name="gender" class="radio-button">
+                    <label>Female</label> 
+                </div>
+
+               
+                <div class="input-name">   
+                    <input type="checkbox" class="check-button">
+                    <label>I agree to the terms and conditions.</label>
+                </div>
+
+                <div class="input-name">   
+                    
+                    <button type="button" onclick="submitForm()">Submit</button>
+                </div>
+                <p>Already have an account? <a href="login.html">Login</a></p>
+
+            </form>
+
+        </div>
+
+    </div>
+</body>
+</html>

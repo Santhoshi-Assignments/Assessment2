@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js"></script>
+
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <h2>LogIn Form</h2>
+
+        <div class="form-container">
+            <form>
+
+                <div class="input-name">
+                    <i class="fa fa-user lock"></i>
+                    <input type="text" id="Username" placeholder="Username" required class="text-name" required>
+                    <span class="error-message" id="usernameError">Please enter your username</span>
+                </div>
+
+                <div class="input-name">
+                    <i class="fa fa-lock lock"></i>
+                    <input type="password" id="Password" placeholder="Password" required class="text-name">
+                    <span class="error-message" id="passwordError">Please enter your password</span>
+                </div>
+
+                <div class="input-name">   
+                  
+                    <button type="button" onclick="submitLoginForm()" id="loginButton" disabled>Submit</button>  
+                </div>
+                <p>Create an account? <a href="registration.html">Register</a></p>
+
+            </form>
+
+        </div>
+
+    </div>
+</body>
+</html>
